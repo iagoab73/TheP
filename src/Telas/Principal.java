@@ -1,15 +1,6 @@
 package Telas;
 
-import Telas.TelaCombate.Tela;
-import Personagens.Humanos.*;
-import Personagens.Inumanos.*;
-import Telas.SelecaoPersonagens.*;
 import Telas.MenuPrincipal.MenuPrincipal;
-import Telas.TelaCombate.Pause;
-import java.nio.ByteBuffer;
-import java.nio.FloatBuffer;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Controller;
 import org.lwjgl.input.Controllers;
@@ -34,7 +25,7 @@ public class Principal {
             Controllers.poll();
             for(int i = 0 ; i< Controllers.getControllerCount();i++){
                     //if(controller.getName().equals("usb gamepad           ")){
-                    if(Controllers.getController(i).getName().equals("usb gamepad           ")){
+                    if(Controllers.getController(i).getName().equals("Controller (XBOX 360 For Windows)")){
                         if(controller1 == null){
                             controller1 = Controllers.getController(i);
                         }else{
